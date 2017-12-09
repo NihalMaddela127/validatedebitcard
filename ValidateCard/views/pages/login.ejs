@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>EasyPay</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  
+  <header><% include ../partials/header %></header>
+  <div  style="padding-left:400px">
+<h1><b>Payment Gateway</b></h1>
+<body class="container">
+<form method="post" action="/login">
+  <div class="form-group">
+    <label>Debit Card Number:</label>
+    <input type="text" name="cardno" placeholder="Debit Card Number">
+  </div>
+  <div class="form-group">
+      <label>Card Holder</label>
+    <input type="text" name="cardhl" placeholder="Card Holder">
+  </div>
+  <div class="form-group">
+      <label>CVV</label>
+    <input type="text" name="cardcv" placeholder="CVV">
+  </div>
+  <p>
+    <input class="btn btn-primary" type="submit" value="Pay">
+  </p>
+
+</form>
+</body>
+</div>
+<footer>
+    <% include ../partials/footer %>
+</footer>
+</html>
